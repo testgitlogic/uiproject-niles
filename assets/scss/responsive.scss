@@ -1,0 +1,339 @@
+/**Tablet Portrait**/
+@media all and(min-width:768px){
+    /**Section Banner Start**/
+    .banner{
+        padding: 30px 0;
+        .container{
+            .banner-wrap{
+                li{
+                    @include fontsize(22px);
+                    &:first-child{
+                        &::after{
+                            @include abs($top:15px, $right:-15px);
+                        }
+                    }
+                    a{
+                        @include fontsize(22px);
+                    }
+                }
+            }
+            .select-box{
+                width: 170px;
+                .select-menu{
+                    padding: 12px;
+                    @include fontsize(16px);
+                }
+                &::after{
+                    @include abs($top:20px, $right:15px);
+                }
+                &::before{
+                    @include abs($top:15px, $right:55px);
+                }
+            }
+        }
+        .banner-image{
+            height: 230px;
+        }
+    }
+    /**Section Banner End**/
+    /**Section Content Start**/
+    .content{
+        .container{
+            @include d-flex;
+            .ltl-block{
+                margin-bottom: 0;
+                width: 50%;
+                padding-right: 40px;
+            }
+            .rtl-block{
+                width: 50%;
+            }
+        }
+    }
+    /**Object-content Section Start**/
+    .object-content{
+        .container{
+            .object-wrapper{
+                @include d-flex;
+                .object-area{
+                    width: 40%;
+                    padding-right: 46px;
+                    margin-bottom: 0;
+                    p{
+                        margin-bottom: 35px;
+                    }
+                }
+                .object-detail{
+                    width: 60%;
+                }
+            }
+        }
+    }
+    /**Object-content Section End**/
+    /**Contact Section Start**/
+    .contact{
+        padding:0;
+        .contact-wrapper{
+            @include d-flex;
+            @include flex-wrap;
+            @include justify-content-end;
+            padding: 0;
+            .contact-form{
+                width: calc(50% - 40px);
+                padding: 50px 0;
+                margin-left: 20px;
+                .form-wrap{
+                    label{
+                        @include fontsize(14px);
+                    }
+                    .form-control{
+                        @include fontsize(18px);
+                    }
+                    .btn{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .client-wrap{
+                background:url("../images/client-image.png") center top/cover;
+                width: 50%;
+                position: relative;
+                .client{
+                    @include abs($top:92px, $left:-80px);
+                    padding: 35px;
+                }
+            }
+        }
+    }
+    /**Contact Section End**/
+}
+/**Tablet Landscape**/
+@media all and(min-width:1024px){
+    /**Section Banner Start**/
+    .banner{
+        padding: 30px 0;
+        .container{
+            .banner-wrap{
+                li{
+                    @include fontsize(30px);
+                    &:first-child{
+                        &::after{
+                            @include abs($top:20px, $right:-13px);
+                        }
+                    }
+                    a{
+                        @include fontsize(30px);
+                    }
+                }
+            }
+        }
+    }
+    /**Section Banner End**/
+    /**Section Content Start**/
+    .content{
+        padding:50px 0;
+        .container{
+            .ltl-block{
+                padding-right: 99px;
+                p{
+                    &:first-child{
+                        @include fontsize(20px);
+                    }
+                }
+            }
+            .rtl-block{
+                padding-left: 30px;
+            }
+        }
+    }
+    /**Section Content End**/
+    /**Object-content Section End**/
+    .object-content{
+        padding: 60px 0;
+        .container{
+            .object-wrapper{
+                .object-area{
+                    padding-right: 76px;
+                    p{
+                        @include fontsize(24px);
+                        margin-bottom: 65px;
+                    }
+                    .company-detail{
+                        @include fontsize(16px);
+                    }
+                }
+                .object-detail{
+                    padding-left: 55px;
+                    p{
+                        @include fontsize(17px);
+                    }
+                }
+            }
+        }
+    }
+    /**Object-content Section End**/
+}
+/**Laptop View**/
+@media all and(min-width:1280px){
+    /**Banner Section Start**/
+    .banner{
+        padding: 42px 0;
+        .container{
+            padding: 0;
+            margin-bottom: 40px;
+            .banner-wrap{
+                padding-left: 37px;
+                li{
+                    @include fontsize(38px);
+                    letter-spacing: 1.6px;
+                    &:first-child{
+                        margin-right: 53px;
+                        &::after{
+                            @include abs($top:26px, $right:-29px);
+                        }
+                    }
+                    a{
+                        @include fontsize(38px);
+                        letter-spacing: 1.6px;
+                    }
+                }
+            }
+            .select-box{
+                width: 195px;
+                .select-menu{
+                    padding: 12px 18px 15px 18px;
+                    letter-spacing: 0.9px;
+                    margin-top: 9px;
+                }
+                &::after{
+                    @include abs($top:30px, $right:24px);
+                }
+                &::before{
+                    @include abs($top:77px, $right:53px);
+                }
+            }
+        }
+        .banner-image{
+            height: 277px;
+        }
+    }
+    /**Section Banner End**/
+    /**Section Content Start**/
+    .content{
+        padding:101px 0 91px;
+        .container{
+            padding: 0;
+            .ltl-block{
+                padding: 0 127px 0 39px;
+                p{
+                    @include fontsize(16px);
+                    &:first-child{
+                        @include fontsize(24px);
+                        margin-bottom: 52px;
+                        word-spacing: 1px;
+                        letter-spacing: 1.1px;
+                    }
+                    &:last-child{
+                        line-height: 1.85;
+                        letter-spacing: 0.4px;
+                        word-spacing: 2px;
+                        padding-right: 7px;
+                    }
+                }
+            }
+            .rtl-block{
+                padding: 0 12px 0 30px;
+                margin-top: 11px;
+            }
+        }
+    }
+    /**Section Content End**/
+    /**Object-content Section Start**/
+    .object-content{
+        padding: 104px 0 93px;
+        .container{
+            padding: 0;
+            h1{
+                padding-left: 35px;
+                letter-spacing: 0.6px;
+                margin-bottom: 44px;
+            }
+            .object-wrapper{
+                .object-area{
+                    padding: 6px 92px 0 34px;
+                    p{
+                        letter-spacing: 1.1px;
+                        margin-bottom: 92px;
+                    }
+                    .company-detail{
+                        padding: 26px 4px;
+                        letter-spacing: 0.9px;
+                        .detail{
+                            width: 78%;
+                            padding: 0 88px 19px 2px;
+                        }
+                    }
+                }
+                .object-detail{
+                    padding-left: 151px;
+                    p{
+                        margin-bottom: 31px;
+                        line-height: 1.85;
+                        letter-spacing: 0.9px;
+                    }
+                }
+            }
+        }
+    }
+    /**Object-content Section End**/
+    /**Contact Section Start**/
+    .contact{
+        .contact-wrapper{
+            .contact-form{
+                padding: 75px 0 89px;
+                h2{
+                    letter-spacing: 0.9px;
+                    margin-bottom: 68px;
+                }
+            .form-wrap{
+                padding: 60px 47px 43px 39px;
+                label{
+                    @include fontsize(16px);
+                    letter-spacing: 0.9px;
+                    margin-bottom: 20px;
+                }
+                .form-control{
+                    @include fontsize(20px);
+                    word-spacing: 3px;
+                    padding-bottom: 20px;
+                    margin-bottom: 80px;
+                }
+                .btn{
+                    width: 388px;
+                    @include fontsize(16px);
+                    padding: 16px 20px;
+                    border-radius: 40px;
+                    letter-spacing: 1.2px;
+                    text-indent: -11px;
+                    margin: 0 5px;
+                }
+            }
+        }
+        .client-wrap{
+            .client{
+                @include abs($top:164px, $left:-114px);
+                width: 432px;
+                background-position: 2px -3px;
+                padding: 66px 63px 75px 75px;
+                p{
+                    @include fontsize(24px);
+                    line-height: 1.5;
+                    letter-spacing: 1.2px;
+                    width:278px;
+                }
+            }
+        }
+        }
+    }
+    /**Contact Section Start**/
+} 

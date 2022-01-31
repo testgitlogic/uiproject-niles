@@ -1,0 +1,205 @@
+/**Section Banner Start**/
+.banner{
+    padding: 20px 0;
+    .container{
+        @include d-flex;
+        @include justify-content-between;
+        @include align-items-start;
+        margin-bottom: 25px;
+        .banner-wrap{
+            @include d-flex;
+            li{
+                @include fontsize(15px);
+                font-family: $primary-fontfamily;
+                font-weight: $fw-regular;
+                &:first-child{
+                    position: relative;
+                    margin-right: 20px;
+                    &::after{
+                        @include abs($top:7px, $right:-14px);
+                        content: "";
+                        width: 0;
+                        height: 0;
+                        border-top: 5px solid transparent;
+                        border-bottom: 5px solid transparent;
+                        border-left: 5px solid $red;
+                    }
+                }
+            }
+            a{
+                @include fontsize(15px);
+            }
+        }
+        .select-box{
+            position: relative;
+            width: 120px;
+            .select-menu{
+                width: 100%;
+                border: 1px solid $gray;
+                padding:7px;
+                font-family: $secondary-font;
+                font-weight: $fw-medium;
+                @include fontsize(14px);
+                cursor: pointer;
+            }
+            &::after{
+                content: "";
+                @include abs($top:15px, $right:12px);
+                width: 0;
+                height: 0;
+                border-right: 5px solid transparent;
+                border-left: 5px solid transparent;
+                border-bottom: 5px solid $blue-secondary;
+                transform: rotate(180deg);
+                pointer-events: none;
+            }
+            &::before{
+                content: "";
+                @include abs($top:9px, $right:27px);
+                width: 2px;
+                height: 16px;
+                background-color:$white-primary;
+            }
+        }
+    }
+    .banner-image{
+        height: 150px;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+/**Section Banner End**/
+/**Section Content Start**/
+.content{
+    padding:20px 0;
+    border-bottom: 2px solid $white-primary;
+    .container{
+        .ltl-block{
+            margin-bottom: 20px;
+            p{
+                &:first-child{
+                    @include fontsize(16px);
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .rtl-block{
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+    }
+}
+/**Section Content End**/
+/**Object-content Section Start**/
+.object-content{
+    padding: 30px 0;
+    .container{
+        .object-wrapper{
+            .object-area{
+                margin-bottom: 25px;
+                p{
+                    @include fontsize(18px);
+                    margin-bottom: 10px;
+                }
+                .company-detail{
+                    @include d-flex;
+                    @include justify-content-between;
+                    @include fontsize(12px);
+                    padding: 20px 10px;
+                    position: relative;
+                    color: $blue;
+                    .year{
+                        font-weight:$fw-bold;
+                    }
+                    .detail{
+                        width: 68%;
+                    }
+                    &::after{
+                        content: "";
+                        @include abs($bottom:0, $left:0);
+                        width: 100%;
+                        height: 2px;
+                        background-color: $white-primary;
+                    }
+                    &:last-child::after{
+                        display: none;
+                    }
+                }
+            }
+            .object-detail{
+                p{
+                    margin-bottom: 20px;
+                    @include fontsize(13px);
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+/**Object-content Section End**/
+/**Contact Section Start**/
+.contact{
+    padding:30px 0;
+    background-color: $off-white;
+    // .container{
+        .contact-wrapper{
+            padding: 20px;
+            .contact-form{
+                h2{
+                    display: inline-block;
+                }
+                .form-wrap{
+                    background-color: $white;
+                    padding: 26px;
+                    label{
+                        display: block;
+                        font-weight: $fw-bold;
+                        @include fontsize(12px);
+                        font-family: $secondary-font;
+                        color:$blue;
+                        margin-bottom: 15px;
+                    }
+                    .form-control{
+                        border:none;
+                        width: 100%;
+                        @include fontsize(14px);
+                        margin-bottom: 25px;
+                        padding-bottom: 15px;
+                        border-bottom: 1px solid $white-secondary;
+                    }
+                    .btn{
+                        background-color: $blue;
+                        margin-bottom: 20px;
+                        padding: 10px 20px;
+                        width: 230px;
+                        border-radius: 20px;
+                        font-weight: $fw-bold;
+                        transition: all 0.5s;
+                        &:hover{
+                            border: 1px solid $blue-primary;
+                            color:$blue-primary;
+                            background-color: transparent;
+                        }
+                    }
+                }
+            }
+            .client{
+                background:url("../images/client.png") -135px -26px no-repeat;
+                padding:60px 40px;
+                p{
+                    color:$white;
+                    @include fontsize(16px);
+                    line-height: 1.8;
+                    width: 245px;
+                }
+            }
+        }
+}
+/**Contact Section End**/

@@ -1,0 +1,228 @@
+.footer{
+    padding:30px 0;
+    text-align:$align-center;
+    color:$blue;
+    .contact-details{
+        margin-bottom: 30px;
+        .footer-logo{
+            width: 120px;
+            margin-bottom: 20px;
+            img{
+                display: block;
+                width: 100%;
+            }
+        }
+        .telephone{
+            display: block;
+            margin-bottom: 5px;
+            font-family: $primary-fontfamily;
+            @include fontsize(12px);
+            transition: all 0.5s;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            &:hover{
+                opacity: 0.4;
+            }
+        }
+    }
+    .footer-wrapper{
+        .list-wrapper{
+            margin-bottom: 35px;
+            .list-menu{
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        @include fontsize(12px);
+                        text-transform: capitalize;
+                        transition: all 0.5s;
+                        &:hover{
+                            opacity: 0.4;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-content{
+            @include fontsize(14px);
+            .footer-menu{
+                margin-bottom: 27px;
+                li{
+                    margin-bottom: 10px;
+                    a{
+                        @include fontsize(12px);
+                        transition: all 0.5s;
+                        &:hover{
+                            opacity: 0.4;
+                        }
+                    }
+                }
+            }
+            p{
+                margin-bottom: 30px;
+                opacity: 0.4;
+            }
+            .copyright{
+                display: block;
+                font-family: $primary-fontfamily;
+                opacity: 0.4;
+            }
+        }
+    }
+}
+/**Tablet Portrait**/
+@media all and(min-width:768px){
+    .footer{
+        .container{
+            @include d-flex;
+            @include justify-content-between;
+            @include align-items-start;
+            @include flex-wrap;
+            .contact-details{
+                margin-bottom: 0;
+                position: relative;
+                width: 18%;
+                &::after{
+                    content: "";
+                    @include abs($top:0, $right:-36px);
+                    background-color: $white-secondary;
+                    width: 2px;
+                    height: 380px;
+                }
+            }
+            .footer-wrapper{
+                width: 69.5%;
+                .footer-list{
+                    @include d-flex;
+                    margin-bottom: 35px;
+                    .list-wrapper{
+                        width: 200px;
+                        text-align: left;
+                        margin-bottom: 0;
+                    }
+                }
+                .footer-content{
+                    .footer-menu{
+                        @include d-flex;
+                        li{
+                            margin-right: 10px;
+                            &:last-child{
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                    p{
+                        text-align: left;
+                    }
+                    .copyright{
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+}
+/**Tablet Portrait**/
+@media all and (min-width:1024px){
+    .footer{
+        padding:89px 0;
+        .container{
+            .contact-details{
+                .footer-logo{
+                    width: 174px;
+                }
+                .telephone{
+                    @include fontsize(16px);
+                }
+            }
+            .footer-wrapper{
+                .footer-list{
+                    .list-wrapper{
+                        h5{
+                            @include fontsize(16px);
+                        }
+                        .list-menu{
+                            li{
+                                a{
+                                    @include fontsize(16px);
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-content{
+                    .footer-menu{
+                        li{
+                            margin-right: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/**Laptop**/
+@media all and(min-width:1280px)
+{
+    .footer{
+        .container{
+            padding: 0;
+            .contact-details{
+                .footer-logo{
+                    margin: -6px 0 70px 17px;
+                }
+                .telephone{
+                    letter-spacing: 0.9px;
+                    margin:0 0 10px 20px;
+                }
+                &::after{
+                    @include abs($top:0, $right:-80px);
+                    height: 460px;
+                }
+            }
+            .footer-wrapper{
+                .footer-list{
+                    margin-bottom: 67px;
+                    .list-wrapper{
+                        h5{
+                            margin-bottom: 30px;
+                            letter-spacing: 0.9px;
+                        }
+                        margin-right: 39px;
+                        &:first-child{
+                            margin-right: 25px;
+                        }
+                        &:nth-child(2){
+                            margin-right: 73px;
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                        .list-menu{
+                            li{
+                                margin-bottom: 8px;
+                                a{
+                                    letter-spacing: 0.9px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .footer-content{
+                    letter-spacing: 0.7px;
+                    .footer-menu{
+                        li{
+                            a{
+                                @include fontsize(14px);
+                            }
+                        }
+                    }
+                    p{
+                        padding-right: 122px;
+                        margin-bottom: 46px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1522 @@
+/*
+ Table Of Contents
+
+ 1). Border-Radius
+ 2). Transition
+ 3). Transform
+ 4). Box-shadow
+ ===============================================*/
+/*
+  4). Box-Shadow
+  -----------------------*/
+/*
+ Font-family
+ -------------------------*/
+/*
+ Font-color
+ -------------------------*/
+/*
+ Font-weight
+ -------------------------*/
+/*
+ Background color
+ -------------------------*/
+/*
+ Border-color
+ -------------------------*/
+/*
+ Alignment
+ -------------------------*/
+/*
+ Table Of Contents
+ 1.) Eric Meyer's Reset
+ 2.) Global Typography
+	 2.0.1) Font Face
+	 2.0.2) Global Headings
+	 2.0.3) Form Elements
+	 2.0.4) List styles
+	 2.0.5) General Text Formatting
+	 2.0.6) Link elements
+	 2.0.7) Table Elements
+	 2.0.8) Button Styles
+	 2.0.9) Sprite Icons
+ 3.) Site Wide Content
+ 4.) Header Style
+ 5.) Footer Style
+ ===============================================*/
+/*
+ 1.) Eric Meyer's Reset
+ ----------------------------------------*/
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+ 1.) Global Typography
+ ----------------------------------------*/
+*, :before, :after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Harmonia Sans Pro Cyr";
+  font-size: 0.875rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr";
+  src: url("../fonts/HarmoniaSansProCyr-Bold.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr Semi Bd";
+  src: url("../fonts/HarmoniaSansProCyr-SemiBd.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-SemiBd.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Harmonia Sans Pro Cyr";
+  src: url("../fonts/HarmoniaSansProCyr-Regular.woff2") format("woff2"), url("../fonts/HarmoniaSansProCyr-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+/*
+ 2.0.2) Global Headings
+ -----------------------------*/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  color: #161e21;
+}
+
+h1 {
+  margin-bottom: 15px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #21263f;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-weight: 700;
+  margin-bottom: 23px;
+  text-transform: uppercase;
+  font-family: "Harmonia Sans Pro Cyr Semi Bd";
+  font-size: 1rem;
+}
+
+h3 {
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+h5 {
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-family: "Harmonia Sans Pro Cyr";
+  font-size: 0.75rem;
+  color: #21263f;
+}
+
+h6 {
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+/*
+ 2.0.3) Form Elements
+ -----------------------------*/
+button, input, optgroup, select, textarea {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background: #fff;
+  border: 1px solid #ccc;
+  font-family: "Open Sans", sans-serif;
+}
+
+input, select, textarea {
+  -webkit-appearance: none;
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+input {
+  line-height: normal;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+  border: none;
+  outline: 0;
+}
+
+input[type=checkbox], input[type=radio] {
+  padding: 0;
+  border: none;
+}
+
+button, input[type=button], input[type=reset], input[type=submit], input[type=file] {
+  -webkit-appearance: none;
+  cursor: pointer;
+  line-height: normal;
+  overflow: visible;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+  color: #999;
+  border-color: #ccc;
+}
+
+button::-moz-focus-inner, input::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+/*
+ 2.0.4) List Styles
+ ---------------------------------*/
+ul, ol, dl {
+  font-size: 100%;
+  line-height: 1.5;
+}
+
+li, dt {
+  line-height: 1.5em;
+}
+
+dl {
+  margin: 0 0 1em 0;
+}
+
+dd {
+  margin: 0 0 1em 0.8em;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0 0 0 0;
+}
+
+ol {
+  list-style-type: decimal;
+  margin: 0 0 1em 0;
+}
+
+ul ul, ol ul {
+  list-style-type: circle;
+  margin-top: 0;
+}
+
+ol ol {
+  list-style-type: lower-latin;
+  margin-top: 0;
+}
+
+/*
+ 2.0.5) General Text Formatting
+ -----------------------------------*/
+p {
+  color: #21263f;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-family: "Harmonia Sans Pro Cyr";
+}
+
+blockquote, cite, q, var, dfn {
+  font-style: italic;
+}
+
+blockquote {
+  background: transparent;
+  color: #666666;
+}
+
+small {
+  font-size: 12px;
+  line-height: 1.75;
+}
+
+pre, code, kbd, tt, samp, var {
+  font-size: 100%;
+}
+
+pre {
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0 0 10px 0;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+pre, code {
+  color: #880000;
+}
+
+kbd, samp, var {
+  color: #666666;
+  font-weight: bold;
+}
+
+acronym, abbr {
+  border-bottom: 1px #aaa dotted;
+  font-variant: small-caps;
+  cursor: help;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a, strong, span, img {
+  display: inline-block;
+}
+
+body img {
+  -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
+  -o-user-select: none;
+  user-select: none;
+}
+
+select::-ms-expand {
+  display: none;
+}
+
+select::-ms-expand {
+  /* IE 8 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* Good browsers  */
+  opacity: 0;
+}
+
+/*
+ Link style
+ -------------------------*/
+a {
+  color: initial;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+a:focus, a:hover {
+  color: initial;
+  text-decoration: none;
+  outline: none;
+}
+
+/*
+ Button Styles
+ -------------------------*/
+.btn, input.btn, button.btn {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: #ffffff;
+  line-height: normal;
+  vertical-align: middle;
+  padding: 8px 15px;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background: #fc202c;
+  text-transform: uppercase;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  border-radius: 15px;
+  transition: all 0.5s;
+}
+
+.btn:hover, .btn:focus, input.btn:hover, input.btn:focus, button.btn:hover, button.btn:focus {
+  background-color: transparent;
+  border: 1px solid #fc202c;
+  color: #fc202c;
+}
+
+button {
+  border: none;
+}
+
+/*
+ Sprite Icons
+ -------------------------*/
+[class^=icon-], [class*=icon-] {
+  background-image: url(../images/sprite.png);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 14px;
+  line-height: 14px;
+  margin-top: 1px;
+  vertical-align: text-top;
+  width: 14px;
+}
+
+/* Containers
+----------------------------------------------------------------------------------------------------*/
+.container {
+  max-width: 1270px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/** pixel perfection code remove this on update **/
+.wrapper {
+  height: 10000px;
+}
+
+/** mobile view**/
+.primary-header {
+  padding: 10px 0;
+  border-bottom: 2px solid #e9eaec;
+}
+.primary-header .container .nav-menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.primary-header .container .nav-menu li {
+  position: relative;
+}
+.primary-header .container .nav-menu li::after {
+  content: "";
+  top: 6px;
+  right: 0;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  height: 13px;
+  width: 2px;
+  background-color: #e8e9eb;
+}
+.primary-header .container .nav-menu li a {
+  font-family: "Harmonia Sans Pro Cyr Semi Bd";
+  transition: all 0.5s;
+  padding: 0 10px;
+}
+.primary-header .container .nav-menu li a:hover {
+  opacity: 0.6;
+}
+.primary-header .container .nav-menu li:last-child::after {
+  display: none;
+}
+.primary-header .container .dashboard-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #2a2e46;
+  font-family: "Harmonia Sans Pro Cyr Semi Bd";
+  font-size: 0.75rem;
+}
+.primary-header .container .dashboard-wrapper .form-group {
+  width: 96px;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+.primary-header .container .dashboard-wrapper .form-group .flagstrap {
+  width: 75%;
+}
+.primary-header .container .dashboard-wrapper .form-group .flagstrap #flagstrap-vO4IKWhW {
+  display: block;
+}
+.primary-header .container .dashboard-wrapper .form-group .btn {
+  background: transparent;
+  color: #000;
+  padding: 0;
+}
+.primary-header .container .dashboard-wrapper .form-group .btn:hover {
+  border: 1px solid transparent;
+}
+.primary-header .container .dashboard-wrapper .form-group .flagstrap ul {
+  display: none;
+}
+.primary-header .container .dashboard-wrapper .form-group .icon-lang {
+  background-position: -10px -10px;
+  width: 17px;
+  height: 17px;
+}
+.primary-header .container .dashboard-wrapper .form-group::after {
+  content: "";
+  top: 2px;
+  right: 20px;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  height: 13px;
+  width: 2px;
+  background-color: #e8e9eb;
+}
+.primary-header .container .dashboard-wrapper .dashboard {
+  display: block;
+  transition: all 0.5s;
+  font-size: 0.875rem;
+}
+.primary-header .container .dashboard-wrapper .dashboard:hover {
+  opacity: 0.6;
+}
+
+.secondary-header {
+  position: relative;
+  padding: 20px 0;
+  border-bottom: 2px solid #e9eaec;
+  z-index: 1;
+}
+.secondary-header .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.secondary-header .container .header-logo {
+  width: 120px;
+}
+.secondary-header .container .header-logo img {
+  display: block;
+  width: 100%;
+}
+.secondary-header .container .nav-wrapper {
+  display: none;
+  top: 100%;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #efe7e7;
+  padding: 30px;
+  text-align: center;
+}
+.secondary-header .container .nav-wrapper .nav-menu li {
+  margin-bottom: 15px;
+}
+.secondary-header .container .nav-wrapper .nav-menu li a {
+  font-family: "Harmonia Sans Pro Cyr Semi Bd";
+  font-size: 0.875rem;
+  position: relative;
+  color: #21263f;
+}
+.secondary-header .container .nav-wrapper .nav-menu li a::after {
+  content: "";
+  top: auto;
+  right: auto;
+  bottom: -1px;
+  left: 0;
+  position: absolute;
+  height: 2px;
+  width: 0%;
+  background-color: #585c6e;
+  transition: all 0.5s;
+}
+.secondary-header .container .nav-wrapper .nav-menu li a:hover::after {
+  width: 100%;
+}
+.secondary-header .container .mob-menu {
+  width: 30px;
+  margin-top: -10px;
+}
+.secondary-header .container .mob-menu .menu-bar {
+  width: 100%;
+  height: 3px;
+  margin-bottom: 3px;
+  background-color: #000;
+  display: block;
+}
+.secondary-header .container .mob-menu .menu-bar:last-child {
+  margin-bottom: 0;
+}
+.secondary-header .container .mob-menu.active .menu-bar:first-child {
+  transform: rotate(45deg) translateX(4px) translateY(0);
+}
+.secondary-header .container .mob-menu.active .menu-bar:nth-child(2) {
+  display: none;
+}
+.secondary-header .container .mob-menu.active .menu-bar:last-child {
+  transform: rotate(-45deg) translateX(4px) translateY(-1px);
+}
+
+/** tablet portrait **/
+@media all and (min-width: 768px) {
+  .primary-header .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .primary-header .container .nav-menu {
+    margin-bottom: 0;
+  }
+  .primary-header .container .nav-menu li a {
+    padding: 0 20px;
+  }
+
+  .secondary-header .container .header-logo {
+    width: 173px;
+    position: relative;
+  }
+  .secondary-header .container .header-logo::after {
+    content: "";
+    top: 5px;
+    right: -31px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    width: 2px;
+    height: 30px;
+    background-color: #e8e9eb;
+    cursor: auto;
+  }
+  .secondary-header .container .nav-wrapper {
+    position: static;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: transparent;
+    padding: 0;
+    width: auto;
+  }
+  .secondary-header .container .nav-wrapper .nav-menu {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .secondary-header .container .nav-wrapper .nav-menu li {
+    margin: 0 10px 0 0;
+  }
+  .secondary-header .container .mob-menu {
+    display: none;
+  }
+}
+/** tablet landscape **/
+@media all and (min-width: 1024px) {
+  .primary-header .container .nav-menu li a {
+    font-size: 0.875rem;
+    padding: 0 31px;
+    letter-spacing: 0.4px;
+  }
+  .primary-header .container .dashboard-wrapper {
+    font-size: 0.875rem;
+  }
+
+  .secondary-header {
+    padding: 20px 0;
+  }
+  .secondary-header .container .header-logo::after {
+    top: 5px;
+    right: -99px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+  }
+  .secondary-header .container .nav-wrapper .nav-menu li {
+    margin-right: 30px;
+  }
+  .secondary-header .container .nav-wrapper .nav-menu li a {
+    font-size: 1rem;
+  }
+}
+/** laptop view **/
+@media all and (min-width: 1280px) {
+  .primary-header {
+    padding: 16px 0;
+  }
+  .primary-header .container {
+    padding: 0 3px;
+  }
+
+  .secondary-header {
+    padding: 68px 0 55px;
+  }
+  .secondary-header .container {
+    padding: 0;
+  }
+  .secondary-header .container .header-logo {
+    margin-left: 36px;
+  }
+  .secondary-header .container .header-logo::after {
+    height: 28px;
+  }
+  .secondary-header .container .nav-wrapper .nav-menu li {
+    margin-right: 68px;
+  }
+  .secondary-header .container .nav-wrapper .nav-menu li:first-child {
+    margin-right: 80px;
+  }
+  .secondary-header .container .nav-wrapper .nav-menu li a {
+    letter-spacing: 1px;
+    word-spacing: 1px;
+  }
+  .secondary-header .container .nav-wrapper .btn {
+    padding: 12px 30px 13px 25px;
+  }
+}
+/** desktop view **/
+/**Section Banner Start**/
+.banner {
+  padding: 20px 0;
+}
+.banner .container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin-bottom: 25px;
+}
+.banner .container .banner-wrap {
+  display: -ms-flexbox;
+  display: flex;
+}
+.banner .container .banner-wrap li {
+  font-size: 0.9375rem;
+  font-family: "Harmonia Sans Pro Cyr";
+  font-weight: 400;
+}
+.banner .container .banner-wrap li:first-child {
+  position: relative;
+  margin-right: 20px;
+}
+.banner .container .banner-wrap li:first-child::after {
+  top: 7px;
+  right: -14px;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid #fc202c;
+}
+.banner .container .banner-wrap a {
+  font-size: 0.9375rem;
+}
+.banner .container .select-box {
+  position: relative;
+  width: 120px;
+}
+.banner .container .select-box .select-menu {
+  width: 100%;
+  border: 1px solid #d4d5da;
+  padding: 7px;
+  font-family: "Harmonia Sans Pro Cyr Semi Bd";
+  font-weight: 500;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+.banner .container .select-box::after {
+  content: "";
+  top: 15px;
+  right: 12px;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-bottom: 5px solid #4e5266;
+  transform: rotate(180deg);
+  pointer-events: none;
+}
+.banner .container .select-box::before {
+  content: "";
+  top: 9px;
+  right: 27px;
+  bottom: auto;
+  left: auto;
+  position: absolute;
+  width: 2px;
+  height: 16px;
+  background-color: #e8e9eb;
+}
+.banner .banner-image {
+  height: 150px;
+}
+.banner .banner-image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/**Section Banner End**/
+/**Section Content Start**/
+.content {
+  padding: 20px 0;
+  border-bottom: 2px solid #e8e9eb;
+}
+.content .container .ltl-block {
+  margin-bottom: 20px;
+}
+.content .container .ltl-block p:first-child {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+.content .container .rtl-block img {
+  display: block;
+  width: 100%;
+}
+
+/**Section Content End**/
+/**Object-content Section Start**/
+.object-content {
+  padding: 30px 0;
+}
+.object-content .container .object-wrapper .object-area {
+  margin-bottom: 25px;
+}
+.object-content .container .object-wrapper .object-area p {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+}
+.object-content .container .object-wrapper .object-area .company-detail {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  padding: 20px 10px;
+  position: relative;
+  color: #21263f;
+}
+.object-content .container .object-wrapper .object-area .company-detail .year {
+  font-weight: 700;
+}
+.object-content .container .object-wrapper .object-area .company-detail .detail {
+  width: 68%;
+}
+.object-content .container .object-wrapper .object-area .company-detail::after {
+  content: "";
+  top: auto;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #e8e9eb;
+}
+.object-content .container .object-wrapper .object-area .company-detail:last-child::after {
+  display: none;
+}
+.object-content .container .object-wrapper .object-detail p {
+  margin-bottom: 20px;
+  font-size: 0.8125rem;
+}
+.object-content .container .object-wrapper .object-detail p:last-child {
+  margin-bottom: 0;
+}
+
+/**Object-content Section End**/
+/**Contact Section Start**/
+.contact {
+  padding: 30px 0;
+  background-color: #f2f2f2;
+}
+.contact .contact-wrapper {
+  padding: 20px;
+}
+.contact .contact-wrapper .contact-form h2 {
+  display: inline-block;
+}
+.contact .contact-wrapper .contact-form .form-wrap {
+  background-color: #ffffff;
+  padding: 26px;
+}
+.contact .contact-wrapper .contact-form .form-wrap label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.75rem;
+  font-family: "Harmonia Sans Pro Cyr Semi Bd";
+  color: #21263f;
+  margin-bottom: 15px;
+}
+.contact .contact-wrapper .contact-form .form-wrap .form-control {
+  border: none;
+  width: 100%;
+  font-size: 0.875rem;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e9eaec;
+}
+.contact .contact-wrapper .contact-form .form-wrap .btn {
+  background-color: #21263f;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  width: 230px;
+  border-radius: 20px;
+  font-weight: 700;
+  transition: all 0.5s;
+}
+.contact .contact-wrapper .contact-form .form-wrap .btn:hover {
+  border: 1px solid #2a2e46;
+  color: #2a2e46;
+  background-color: transparent;
+}
+.contact .contact-wrapper .client {
+  background: url("../images/client.png") -135px -26px no-repeat;
+  padding: 60px 40px;
+}
+.contact .contact-wrapper .client p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.8;
+  width: 245px;
+}
+
+/**Contact Section End**/
+.footer {
+  padding: 30px 0;
+  text-align: center;
+  color: #21263f;
+}
+.footer .contact-details {
+  margin-bottom: 30px;
+}
+.footer .contact-details .footer-logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+.footer .contact-details .footer-logo img {
+  display: block;
+  width: 100%;
+}
+.footer .contact-details .telephone {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Harmonia Sans Pro Cyr";
+  font-size: 0.75rem;
+  transition: all 0.5s;
+}
+.footer .contact-details .telephone:last-child {
+  margin-bottom: 0;
+}
+.footer .contact-details .telephone:hover {
+  opacity: 0.4;
+}
+.footer .footer-wrapper .list-wrapper {
+  margin-bottom: 35px;
+}
+.footer .footer-wrapper .list-wrapper .list-menu li {
+  margin-bottom: 10px;
+}
+.footer .footer-wrapper .list-wrapper .list-menu li a {
+  font-size: 0.75rem;
+  text-transform: capitalize;
+  transition: all 0.5s;
+}
+.footer .footer-wrapper .list-wrapper .list-menu li a:hover {
+  opacity: 0.4;
+}
+.footer .footer-wrapper .footer-content {
+  font-size: 0.875rem;
+}
+.footer .footer-wrapper .footer-content .footer-menu {
+  margin-bottom: 27px;
+}
+.footer .footer-wrapper .footer-content .footer-menu li {
+  margin-bottom: 10px;
+}
+.footer .footer-wrapper .footer-content .footer-menu li a {
+  font-size: 0.75rem;
+  transition: all 0.5s;
+}
+.footer .footer-wrapper .footer-content .footer-menu li a:hover {
+  opacity: 0.4;
+}
+.footer .footer-wrapper .footer-content p {
+  margin-bottom: 30px;
+  opacity: 0.4;
+}
+.footer .footer-wrapper .footer-content .copyright {
+  display: block;
+  font-family: "Harmonia Sans Pro Cyr";
+  opacity: 0.4;
+}
+
+/**Tablet Portrait**/
+@media all and (min-width: 768px) {
+  .footer .container {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+  }
+  .footer .container .contact-details {
+    margin-bottom: 0;
+    position: relative;
+    width: 18%;
+  }
+  .footer .container .contact-details::after {
+    content: "";
+    top: 0;
+    right: -36px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    background-color: #e9eaec;
+    width: 2px;
+    height: 380px;
+  }
+  .footer .container .footer-wrapper {
+    width: 69.5%;
+  }
+  .footer .container .footer-wrapper .footer-list {
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 35px;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper {
+    width: 200px;
+    text-align: left;
+    margin-bottom: 0;
+  }
+  .footer .container .footer-wrapper .footer-content .footer-menu {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .footer .container .footer-wrapper .footer-content .footer-menu li {
+    margin-right: 10px;
+  }
+  .footer .container .footer-wrapper .footer-content .footer-menu li:last-child {
+    margin-right: 0;
+  }
+  .footer .container .footer-wrapper .footer-content p {
+    text-align: left;
+  }
+  .footer .container .footer-wrapper .footer-content .copyright {
+    text-align: left;
+  }
+}
+/**Tablet Portrait**/
+@media all and (min-width: 1024px) {
+  .footer {
+    padding: 89px 0;
+  }
+  .footer .container .contact-details .footer-logo {
+    width: 174px;
+  }
+  .footer .container .contact-details .telephone {
+    font-size: 1rem;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper h5 {
+    font-size: 1rem;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper .list-menu li a {
+    font-size: 1rem;
+  }
+  .footer .container .footer-wrapper .footer-content .footer-menu li {
+    margin-right: 30px;
+  }
+}
+/**Laptop**/
+@media all and (min-width: 1280px) {
+  .footer .container {
+    padding: 0;
+  }
+  .footer .container .contact-details .footer-logo {
+    margin: -6px 0 70px 17px;
+  }
+  .footer .container .contact-details .telephone {
+    letter-spacing: 0.9px;
+    margin: 0 0 10px 20px;
+  }
+  .footer .container .contact-details::after {
+    top: 0;
+    right: -80px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+    height: 460px;
+  }
+  .footer .container .footer-wrapper .footer-list {
+    margin-bottom: 67px;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper {
+    margin-right: 39px;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper h5 {
+    margin-bottom: 30px;
+    letter-spacing: 0.9px;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper:first-child {
+    margin-right: 25px;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper:nth-child(2) {
+    margin-right: 73px;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper:last-child {
+    margin-right: 0;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper .list-menu li {
+    margin-bottom: 8px;
+  }
+  .footer .container .footer-wrapper .footer-list .list-wrapper .list-menu li a {
+    letter-spacing: 0.9px;
+  }
+  .footer .container .footer-wrapper .footer-content {
+    letter-spacing: 0.7px;
+  }
+  .footer .container .footer-wrapper .footer-content .footer-menu li a {
+    font-size: 0.875rem;
+  }
+  .footer .container .footer-wrapper .footer-content p {
+    padding-right: 122px;
+    margin-bottom: 46px;
+  }
+}
+/**Tablet Portrait**/
+@media all and (min-width: 768px) {
+  /**Section Banner Start**/
+  .banner {
+    padding: 30px 0;
+  }
+  .banner .container .banner-wrap li {
+    font-size: 1.375rem;
+  }
+  .banner .container .banner-wrap li:first-child::after {
+    top: 15px;
+    right: -15px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+  }
+  .banner .container .banner-wrap li a {
+    font-size: 1.375rem;
+  }
+  .banner .container .select-box {
+    width: 170px;
+  }
+  .banner .container .select-box .select-menu {
+    padding: 12px;
+    font-size: 1rem;
+  }
+  .banner .container .select-box::after {
+    top: 20px;
+    right: 15px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+  }
+  .banner .container .select-box::before {
+    top: 15px;
+    right: 55px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+  }
+  .banner .banner-image {
+    height: 230px;
+  }
+
+  /**Section Banner End**/
+  /**Section Content Start**/
+  .content .container {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .content .container .ltl-block {
+    margin-bottom: 0;
+    width: 50%;
+    padding-right: 40px;
+  }
+  .content .container .rtl-block {
+    width: 50%;
+  }
+
+  /**Object-content Section Start**/
+  .object-content .container .object-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .object-content .container .object-wrapper .object-area {
+    width: 40%;
+    padding-right: 46px;
+    margin-bottom: 0;
+  }
+  .object-content .container .object-wrapper .object-area p {
+    margin-bottom: 35px;
+  }
+  .object-content .container .object-wrapper .object-detail {
+    width: 60%;
+  }
+
+  /**Object-content Section End**/
+  /**Contact Section Start**/
+  .contact {
+    padding: 0;
+  }
+  .contact .contact-wrapper {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    padding: 0;
+  }
+  .contact .contact-wrapper .contact-form {
+    width: calc(50% - 40px);
+    padding: 50px 0;
+    margin-left: 20px;
+  }
+  .contact .contact-wrapper .contact-form .form-wrap label {
+    font-size: 0.875rem;
+  }
+  .contact .contact-wrapper .contact-form .form-wrap .form-control {
+    font-size: 1.125rem;
+  }
+  .contact .contact-wrapper .contact-form .form-wrap .btn {
+    margin-bottom: 0;
+  }
+  .contact .contact-wrapper .client-wrap {
+    background: url("../images/client-image.png") center top/cover;
+    width: 50%;
+    position: relative;
+  }
+  .contact .contact-wrapper .client-wrap .client {
+    top: 92px;
+    right: auto;
+    bottom: auto;
+    left: -80px;
+    position: absolute;
+    padding: 35px;
+  }
+
+  /**Contact Section End**/
+}
+/**Tablet Landscape**/
+@media all and (min-width: 1024px) {
+  /**Section Banner Start**/
+  .banner {
+    padding: 30px 0;
+  }
+  .banner .container .banner-wrap li {
+    font-size: 1.875rem;
+  }
+  .banner .container .banner-wrap li:first-child::after {
+    top: 20px;
+    right: -13px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+  }
+  .banner .container .banner-wrap li a {
+    font-size: 1.875rem;
+  }
+
+  /**Section Banner End**/
+  /**Section Content Start**/
+  .content {
+    padding: 50px 0;
+  }
+  .content .container .ltl-block {
+    padding-right: 99px;
+  }
+  .content .container .ltl-block p:first-child {
+    font-size: 1.25rem;
+  }
+  .content .container .rtl-block {
+    padding-left: 30px;
+  }
+
+  /**Section Content End**/
+  /**Object-content Section End**/
+  .object-content {
+    padding: 60px 0;
+  }
+  .object-content .container .object-wrapper .object-area {
+    padding-right: 76px;
+  }
+  .object-content .container .object-wrapper .object-area p {
+    font-size: 1.5rem;
+    margin-bottom: 65px;
+  }
+  .object-content .container .object-wrapper .object-area .company-detail {
+    font-size: 1rem;
+  }
+  .object-content .container .object-wrapper .object-detail {
+    padding-left: 55px;
+  }
+  .object-content .container .object-wrapper .object-detail p {
+    font-size: 1.0625rem;
+  }
+
+  /**Object-content Section End**/
+}
+/**Laptop View**/
+@media all and (min-width: 1280px) {
+  /**Banner Section Start**/
+  .banner {
+    padding: 42px 0;
+  }
+  .banner .container {
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .banner .container .banner-wrap {
+    padding-left: 37px;
+  }
+  .banner .container .banner-wrap li {
+    font-size: 2.375rem;
+    letter-spacing: 1.6px;
+  }
+  .banner .container .banner-wrap li:first-child {
+    margin-right: 53px;
+  }
+  .banner .container .banner-wrap li:first-child::after {
+    top: 26px;
+    right: -29px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+  }
+  .banner .container .banner-wrap li a {
+    font-size: 2.375rem;
+    letter-spacing: 1.6px;
+  }
+  .banner .container .select-box {
+    width: 195px;
+  }
+  .banner .container .select-box .select-menu {
+    padding: 12px 18px 15px 18px;
+    letter-spacing: 0.9px;
+    margin-top: 9px;
+  }
+  .banner .container .select-box::after {
+    top: 30px;
+    right: 24px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+  }
+  .banner .container .select-box::before {
+    top: 77px;
+    right: 53px;
+    bottom: auto;
+    left: auto;
+    position: absolute;
+  }
+  .banner .banner-image {
+    height: 277px;
+  }
+
+  /**Section Banner End**/
+  /**Section Content Start**/
+  .content {
+    padding: 101px 0 91px;
+  }
+  .content .container {
+    padding: 0;
+  }
+  .content .container .ltl-block {
+    padding: 0 127px 0 39px;
+  }
+  .content .container .ltl-block p {
+    font-size: 1rem;
+  }
+  .content .container .ltl-block p:first-child {
+    font-size: 1.5rem;
+    margin-bottom: 52px;
+    word-spacing: 1px;
+    letter-spacing: 1.1px;
+  }
+  .content .container .ltl-block p:last-child {
+    line-height: 1.85;
+    letter-spacing: 0.4px;
+    word-spacing: 2px;
+    padding-right: 7px;
+  }
+  .content .container .rtl-block {
+    padding: 0 12px 0 30px;
+    margin-top: 11px;
+  }
+
+  /**Section Content End**/
+  /**Object-content Section Start**/
+  .object-content {
+    padding: 104px 0 93px;
+  }
+  .object-content .container {
+    padding: 0;
+  }
+  .object-content .container h1 {
+    padding-left: 35px;
+    letter-spacing: 0.6px;
+    margin-bottom: 44px;
+  }
+  .object-content .container .object-wrapper .object-area {
+    padding: 6px 92px 0 34px;
+  }
+  .object-content .container .object-wrapper .object-area p {
+    letter-spacing: 1.1px;
+    margin-bottom: 92px;
+  }
+  .object-content .container .object-wrapper .object-area .company-detail {
+    padding: 26px 4px;
+    letter-spacing: 0.9px;
+  }
+  .object-content .container .object-wrapper .object-area .company-detail .detail {
+    width: 78%;
+    padding: 0 88px 19px 2px;
+  }
+  .object-content .container .object-wrapper .object-detail {
+    padding-left: 151px;
+  }
+  .object-content .container .object-wrapper .object-detail p {
+    margin-bottom: 31px;
+    line-height: 1.85;
+    letter-spacing: 0.9px;
+  }
+
+  /**Object-content Section End**/
+  /**Contact Section Start**/
+  .contact .contact-wrapper .contact-form {
+    padding: 75px 0 89px;
+  }
+  .contact .contact-wrapper .contact-form h2 {
+    letter-spacing: 0.9px;
+    margin-bottom: 68px;
+  }
+  .contact .contact-wrapper .contact-form .form-wrap {
+    padding: 60px 47px 43px 39px;
+  }
+  .contact .contact-wrapper .contact-form .form-wrap label {
+    font-size: 1rem;
+    letter-spacing: 0.9px;
+    margin-bottom: 20px;
+  }
+  .contact .contact-wrapper .contact-form .form-wrap .form-control {
+    font-size: 1.25rem;
+    word-spacing: 3px;
+    padding-bottom: 20px;
+    margin-bottom: 80px;
+  }
+  .contact .contact-wrapper .contact-form .form-wrap .btn {
+    width: 388px;
+    font-size: 1rem;
+    padding: 16px 20px;
+    border-radius: 40px;
+    letter-spacing: 1.2px;
+    text-indent: -11px;
+    margin: 0 5px;
+  }
+  .contact .contact-wrapper .client-wrap .client {
+    top: 164px;
+    right: auto;
+    bottom: auto;
+    left: -114px;
+    position: absolute;
+    width: 432px;
+    background-position: 2px -3px;
+    padding: 66px 63px 75px 75px;
+  }
+  .contact .contact-wrapper .client-wrap .client p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+    width: 278px;
+  }
+
+  /**Contact Section Start**/
+}
+
+/*# sourceMappingURL=main.css.map */
